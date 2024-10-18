@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int n,i=1,sum=0;
-    printf("Enter a number:");
-    scanf("%d",&n);
-    while(i<=n)
+    int a,b;
+    printf("Enter 2 number: ");
+    scanf("%d %d",&a,&b);
+    if(a<b)
     {
-        sum=sum+i;
-        i++;
+        printf("%d is min",a);
     }
-    printf("sum= %d",sum);
+    else
+    {
+        printf("%d is min",b);
+    }
     return 0;
 }
